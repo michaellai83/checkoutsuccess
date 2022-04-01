@@ -1,0 +1,302 @@
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.header{
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 36px  0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include pad{
+        justify-content: space-around;
+    };
+    .dehaze{
+        @include dehaze;
+        width: 24px;
+        height: 24px;
+        display: none;
+        @include pad{
+            display: block;
+        }
+    }
+    .titlelogo{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        @include pad{
+            width: 40%;
+        };
+        h1{
+            width: 100%;
+            a{
+                @include logo;
+                height: 40px;
+                @include pad {
+                    @include logo2;
+                    height: 18px;
+                };
+            }
+        }
+    }
+    .titlemenu{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include pad{
+            display: none;
+        };
+        li{
+            width: 100%;
+            a{
+                text-decoration: none;
+                font-size: $fz16;
+                font-family: $ffp;
+                line-height: $lh73;
+                font-weight: "Swmibold";
+                color: $darkgreen;
+                padding-right: 5%;
+                &:hover{
+                    color:$lightgreen;
+                    background-color: $darkgreen
+                }
+            }
+        }
+       
+    }
+    .shoppingcart{
+        @include shoppingcart;
+        width: 24px;
+        height: 24px;
+    }
+
+}
+.main{
+    background-image: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 460px;
+    margin-bottom: 60px;
+    position: relative;
+    @include pad{
+        margin-bottom: 0;
+        
+    };
+}
+.art{
+    position: absolute;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left:35%;
+    top:25%;
+    @include pad{
+        min-width: 100%;
+        left:0;
+        top:40%;
+    };
+}
+   
+    .icon{
+        display: flex;
+        align-items: center;
+        .tick{
+            background-image: url(../images/noun_tick_2311214.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+        }
+        
+    }
+    .success{
+        background-image: url(../images/lg-付款成功.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 190px;
+        height: 46px;
+        margin: 30px 0;
+        @include pad{
+            margin-bottom: 35%;
+        };
+    }
+    button{
+        width: 100%;
+        background-color: $yellow;
+        border: none;
+        color: $darkgreen;
+        font-size: $fz24;
+        line-height: 20px;
+        font-family: $ffp;
+        font-weight: $fws;
+        padding: 15px 0 17px 0;
+        cursor: pointer;
+        &:hover{
+            background-color: yellow;
+            transform: scale(1.5);
+            @include pad {
+                transform: none;
+            };
+        }
+}
+.footer{
+    max-width: 100%;
+    .footerup{
+        max-width: 100%;
+        background-color: $darkgreen;
+        position: relative;
+        .footerlogo{
+            background-image: url(../images/logo-light.svg);
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top:55px;
+            left:70px;
+            @include pad{
+                left:30px;
+                top:10px;
+            };
+        }
+        .up{
+            max-width: 70%;
+            margin: 0 auto;
+            padding: 5% 0 ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include pad{
+                flex-direction: column;
+            };
+            h4{
+                font-family: "Helvetica neue";
+                font-weight: "Regular";
+                font-size: $fz24;
+                line-height: $lh29;
+                color: $lightgreen;
+                @include pad{
+                    padding-bottom: 30px;
+                }
+                
+            }
+            .email{
+                width: 50%;
+                height: 60px;
+                background-color: $lightgreen;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include pad {
+                    width: 100%;
+                    margin-bottom: 30px;
+                };
+                .emaillogo{
+                    background-repeat: no-repeat;
+                    background-image: url(..//images/mail-24px.png);
+                    background-position: center;
+                    width: 24px;
+                    height: 24px;
+                    
+                }
+                input{
+                    background-color: $lightgreen;
+                    border: none;
+                    color: $lightgreen;
+                }
+                .foward{
+                    background-repeat: no-repeat;
+                    background-image: url(../images/arrow_forward-24px.png);
+                    background-position: center;
+                    width: 60px;
+                    height: 60px;
+                    display: block;
+                    background-color: $yellow;
+                    &:hover{
+                        transition: all 0.4s;
+                        background-color: rgb(240, 240, 6);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+    .footerdown{
+        max-width: 100%;
+        background-color: $lightgreen;
+        .footerart{
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .left{
+                width: 80%;
+                .logo{
+                    background-repeat: no-repeat;
+                    background-image: url(../images/logotype-lg-dark.svg);
+                    width: 171.2px;
+                    height: 26.6px;
+                    padding-bottom: 115.5px;
+                }
+                .tel{
+                    li{
+                        font-family: "Helvetica Neue";
+                        font-weight: "Regular";
+                        font-size: $fz16;
+                        line-height: 24px;
+                        color: $darkgreen;
+                    }
+                    
+                }
+
+            }
+            .right{
+                background-repeat: no-repeat;
+                background-image: url(../images/sm-今天是個吃甜點的好日子.svg);
+                width: 60px;
+                height: 220px;
+                @include pad {
+                    display: none;
+                };
+            }
+        }
+        .last{
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            @include pad{
+                flex-direction: column;
+            };
+            .icon{
+                @include pad {
+                    padding-bottom: 30px;
+                } ;  
+                .line{
+                    width: 30px;
+                    height: 30px;
+                }
+                .fb{
+                    width: 30px;
+                    height: 30px;
+                }
+
+            }
+            .year{
+                font-family: "Times";
+                font-weight: "Regular";
+                font-size: $fz16;
+                line-height: 19px;
+                color: $darkgreen;                    
+            }
+        }
+    }
+}

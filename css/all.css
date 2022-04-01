@@ -1,0 +1,536 @@
+@charset "UTF-8";
+.white {
+  color: #FFFFFF;
+}
+
+.yellow {
+  color: #FFE180;
+}
+
+.darkgreen {
+  color: #3F5D45;
+}
+
+.lightgreen {
+  color: #EAF0ED;
+}
+
+.gray {
+  color: #8DA291;
+}
+
+.ffp {
+  font-family: "PingFang TC";
+}
+
+.fwl {
+  font-weight: "light";
+}
+
+.fwz {
+  font-weight: "semibold";
+}
+
+.fz16 {
+  font-size: 16px;
+}
+
+.fz20 {
+  font-size: 20px;
+}
+
+.fz24 {
+  font-size: 24px;
+}
+
+.lh16 {
+  line-height: 16px;
+}
+
+.lh20 {
+  line-height: 20px;
+}
+
+.lh24 {
+  line-height: 24px;
+}
+
+.lh29 {
+  line-height: 29px;
+}
+
+.lh30 {
+  line-height: 30px;
+}
+
+.lh32 {
+  line-height: 32px;
+}
+
+.lh73 {
+  line-height: 73px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 36px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.header .dehaze {
+  display: block;
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true) no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+@media (max-width: 767px) {
+  .header .dehaze {
+    display: block;
+  }
+}
+.header .titlelogo {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 767px) {
+  .header .titlelogo {
+    width: 40%;
+  }
+}
+.header .titlelogo h1 {
+  width: 100%;
+}
+.header .titlelogo h1 a {
+  display: block;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg) no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .header .titlelogo h1 a {
+    display: block;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg) no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 18px;
+  }
+}
+.header .titlemenu {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .header .titlemenu {
+    display: none;
+  }
+}
+.header .titlemenu li {
+  width: 100%;
+}
+.header .titlemenu li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "PingFang TC";
+  line-height: 73px;
+  font-weight: "Swmibold";
+  color: #3F5D45;
+  padding-right: 5%;
+}
+.header .titlemenu li a:hover {
+  color: #EAF0ED;
+  background-color: #3F5D45;
+}
+.header .shoppingcart {
+  display: block;
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true) no-repeat center;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 24px;
+  height: 24px;
+}
+
+.main {
+  background-image: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=800&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 460px;
+  margin-bottom: 60px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .main {
+    margin-bottom: 0;
+  }
+}
+
+.art {
+  position: absolute;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 35%;
+  top: 25%;
+}
+@media (max-width: 767px) {
+  .art {
+    min-width: 100%;
+    left: 0;
+    top: 40%;
+  }
+}
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.icon .tick {
+  background-image: url(../images/noun_tick_2311214.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.success {
+  background-image: url(../images/lg-付款成功.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 190px;
+  height: 46px;
+  margin: 30px 0;
+}
+@media (max-width: 767px) {
+  .success {
+    margin-bottom: 35%;
+  }
+}
+
+button {
+  width: 100%;
+  background-color: #FFE180;
+  border: none;
+  color: #3F5D45;
+  font-size: 24px;
+  line-height: 20px;
+  font-family: "PingFang TC";
+  font-weight: "semibold";
+  padding: 15px 0 17px 0;
+  cursor: pointer;
+}
+button:hover {
+  background-color: yellow;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+@media (max-width: 767px) {
+  button:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.footer {
+  max-width: 100%;
+}
+.footer .footerup {
+  max-width: 100%;
+  background-color: #3F5D45;
+  position: relative;
+}
+.footer .footerup .footerlogo {
+  background-image: url(../images/logo-light.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 55px;
+  left: 70px;
+}
+@media (max-width: 767px) {
+  .footer .footerup .footerlogo {
+    left: 30px;
+    top: 10px;
+  }
+}
+.footer .footerup .up {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .footer .footerup .up {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.footer .footerup .up h4 {
+  font-family: "Helvetica neue";
+  font-weight: "Regular";
+  font-size: 24px;
+  line-height: 29px;
+  color: #EAF0ED;
+}
+@media (max-width: 767px) {
+  .footer .footerup .up h4 {
+    padding-bottom: 30px;
+  }
+}
+.footer .footerup .up .email {
+  width: 50%;
+  height: 60px;
+  background-color: #EAF0ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .footer .footerup .up .email {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.footer .footerup .up .email .emaillogo {
+  background-repeat: no-repeat;
+  background-image: url(..//images/mail-24px.png);
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+.footer .footerup .up .email input {
+  background-color: #EAF0ED;
+  border: none;
+  color: #EAF0ED;
+}
+.footer .footerup .up .email .foward {
+  background-repeat: no-repeat;
+  background-image: url(../images/arrow_forward-24px.png);
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: #FFE180;
+}
+.footer .footerup .up .email .foward:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #f0f006;
+  cursor: pointer;
+}
+.footer .footerdown {
+  max-width: 100%;
+  background-color: #EAF0ED;
+}
+.footer .footerdown .footerart {
+  max-width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .footerdown .footerart .left {
+  width: 80%;
+}
+.footer .footerdown .footerart .left .logo {
+  background-repeat: no-repeat;
+  background-image: url(../images/logotype-lg-dark.svg);
+  width: 171.2px;
+  height: 26.6px;
+  padding-bottom: 115.5px;
+}
+.footer .footerdown .footerart .left .tel li {
+  font-family: "Helvetica Neue";
+  font-weight: "Regular";
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F5D45;
+}
+.footer .footerdown .footerart .right {
+  background-repeat: no-repeat;
+  background-image: url(../images/sm-今天是個吃甜點的好日子.svg);
+  width: 60px;
+  height: 220px;
+}
+@media (max-width: 767px) {
+  .footer .footerdown .footerart .right {
+    display: none;
+  }
+}
+.footer .footerdown .last {
+  max-width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .footer .footerdown .last {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .footer .footerdown .last .icon {
+    padding-bottom: 30px;
+  }
+}
+.footer .footerdown .last .icon .line {
+  width: 30px;
+  height: 30px;
+}
+.footer .footerdown .last .icon .fb {
+  width: 30px;
+  height: 30px;
+}
+.footer .footerdown .last .year {
+  font-family: "Times";
+  font-weight: "Regular";
+  font-size: 16px;
+  line-height: 19px;
+  color: #3F5D45;
+}
+
+/*
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 照片避免破圖*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
